@@ -1,0 +1,45 @@
+/* 基本样式设置 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* 左侧导航栏样式 */
+.sidebar {
+    width: 200px; /* 左侧导航栏的宽度 */
+    position: fixed;
+    top: 40%;
+    transform: translateY(-100%); 
+    left: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    overflow-y: auto;
+    transition: transform 0.3s ease;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #555;
+}
+
+/* 主内容区域样式 */
+.content {
+    margin-left: 0px; /* 左侧导航栏的宽度 */
+    padding: 0px;
+}
